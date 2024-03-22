@@ -1,0 +1,1773 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+/*body {
+    background: $white;
+}*/
+
+
+/* COLORS 
+--------------------------------------------------*/
+
+a {
+    color: $accent-shade;
+}
+
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: $accent-shade !important;
+}
+
+.menu--main li a {
+    color: $primary-shade;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
+
+
+/*
+
+// General styles
+body {
+    background-color: #fff;
+    font: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #1f1e1e;
+}
+
+#navbar {
+    background-color: #fff;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 159px;
+    height: 47px;
+    border-radius: 4px;
+    border: 1px solid #1f1e1e;
+    background-color: #1f1e1e;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+// Banner
+#block-palette-main-menu > ul {
+    background: url('../images/header.png') no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+#block-palette-ecofriendlypaintsforahealthyhome {
+    width: 100%;
+    height: auto;
+    background: url('../images/image.png') no-repeat;
+    background-size: cover;
+    min-height: 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+
+
+    h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 63px;
+        line-height: 1.04; // Approximate line height calculation: 65.63 / 63
+        color: #fff;
+        width: 410px;
+        margin: 40px ;
+        text-align: left;
+    }
+
+    button {
+        width: 200px;
+        height: 37px;
+        border-radius: 4.17px;
+        border: 1px solid #1f1e1e;
+        background-color: #1f1e1e;
+        font: "Roboto", sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 1.02; // Approximate line height calculation: 9 / 9.17
+        align-items: center;
+        margin: 0 0 0 40px;
+    }
+}
+
+// 4 info blocks
+#block-palette-views-block-short-info-block-1 {
+    //margin: 60px 0 60px 110px;
+    margin: 40px auto;
+
+    .row {
+        .views-view-grid .views-col {
+            display: flex;
+
+            .views-field-info {
+                color: #3c3c3c;
+                font-size: 24px;
+                line-height: 1.15; // Approximate line height calculation: 27.5 / 24
+            }
+
+            .views-field-body {
+                text-transform: uppercase;
+                margin: 0 30px 0 14px;
+                text-align: left;
+                color: #3c3c3c;
+                font-size: 11px;
+                line-height: 1.36; // Approximate line height calculation: 15 / 11
+            }
+        }
+    }
+}
+
+h2, .h2 {
+    text-align: center;
+    font-size: 125px;
+    line-height: 1.05; // Approximate line height calculation: 131 / 125
+    margin: 50px 0;
+}
+
+// Store views
+#views-bootstrap-shop-block-1 {
+    .product-item {
+        .field--type-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 200px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        .views-field-title,
+        .views-field-field-price {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+
+        .views-field-field-price {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+#block-palette-ourmission {
+    margin-bottom: 60px;
+
+    p {
+        width: 681px;
+    }
+}
+
+#block-palette-ourmission, #block-palette-aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-weight: 400;
+        font-size: 192px;
+        line-height: 1.05; // Approximate line height calculation: 201 / 192
+        margin-bottom: 50px;
+    }
+
+    h5 {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 38px;
+        line-height: 1.21; // Approximate line height calculation: 46 / 38
+        text-align: center;
+    }
+}
+
+#block-palette- ,
+#block-palette-twocolors {
+    .content {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        .field--name-field-image {
+            width: 39%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .field--type-text-with-summary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-left: 10px;
+            background-color: #f4ede6;
+            width: 39%;
+            padding-bottom: 39%;
+            position: relative;
+
+            .field__item {
+                position: absolute;
+                top: 0;
+
+                p {
+                    color: #425e44;
+                    margin: 80px 0;
+                    width: 439px;
+                    font-size: 52px;
+                    line-height: 1.12; // Approximate line height calculation: 58 / 52
+                    text-align: center;
+                }
+
+                h6 {
+                    font-weight: 400;
+                    color: #425e44;
+                    font-size: 9px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+#block-palette-twocolors {
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+        justify-content: center;
+
+        img {
+            width: 546px;
+            height: 546px;
+            margin-left: 10px;
+        }
+
+        .field--type-text-with-summary {
+            background: url('../images/back.png') no-repeat;
+            background-size: cover;
+            width: 39%;
+            padding-bottom: 39%;
+            position: relative;
+
+            .field__item {
+                position: absolute;
+                top: 0;
+
+                p {
+                    color: #1f1e1e;
+                    width: 330px;
+                    font-size: 46px;
+                    line-height: 1.09; // Approximate line height calculation: 50 / 46
+                    text-align: center;
+                    margin: 100px 0;
+                }
+
+                .button {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+#block-palette-aboutus {
+    p {
+        font-size: 21px;
+        line-height: 1.38; // Approximate line height calculation: 29 / 21
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 576px) { // Medium devices (tablets, 768px and up)
+    .container {
+        width: 750px;
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+     //   padding: 10px 30px 10px 30px;
+     max-height: 300px;
+     min-height: 250px;
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {    
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    #block-palette-ourmission{
+        p{
+            width: 100%;
+            font-size: 2rem;
+            line-height: 1.3;
+        }
+    }
+
+    #block-palette-aboutus{
+        p{
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+    }
+
+
+
+    .button {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+  
+    h2, .h2 {
+        text-align: center;
+        font-size: 5.8rem;
+        line-height: 1.05;
+        margin: 3.125rem 0;
+    }
+
+    #views-bootstrap-shop-block-1 {
+        .product-item {
+            .field--type-image {
+                img {
+                    width: 300px;
+                }
+            }
+            .views-field-title,
+            .views-field-field-price {
+                text-align: center;
+                font-size: 1.575rem;
+                margin-bottom: 0px;
+            }
+
+            .views-field-field-price {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+    #block-palette-, 
+    #block-palette-twocolors{
+        .content{
+            .field--type-text-with-summary{
+                .field__item{
+                    p{
+                        width: 95%;
+                        font-size: 1.625rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) { // Medium devices (tablets, 768px and up)
+    .container {
+        width: 970px;
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+     //   padding: 10px 30px 10px 30px;
+     max-height: 300px;
+     min-height: 250px;
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {    
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    #block-palette-ourmission{
+        p{
+            width: 100%;
+            font-size: 2rem;
+            line-height: 1.3;
+        }
+    }
+
+    #block-palette-aboutus{
+        p{
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+    }
+
+
+
+    .button {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+  
+    h2, .h2 {
+        text-align: center;
+        font-size: 5.8rem;
+        line-height: 1.05;
+        margin: 3.125rem 0;
+    }
+
+    #views-bootstrap-shop-block-1 {
+        .product-item {
+            .field--type-image {
+                img {
+                    width: 300px;
+                }
+            }
+            .views-field-title,
+            .views-field-field-price {
+                text-align: center;
+                font-size: 1.575rem;
+                margin-bottom: 0px;
+            }
+
+            .views-field-field-price {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+    #block-palette-, 
+    #block-palette-twocolors{
+        .content{
+            .field--type-text-with-summary{
+                .field__item{
+                    p{
+                        width: 95%;
+                        font-size: 1.625rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) { // Large devices (desktops, 992px and up)
+    .container {
+        width: 1190px;
+    }
+    
+    #block-palette-ourmission, #block-palette-aboutus {    
+        h1 {
+            font-size: 120px;
+        }
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+    
+        h2 {
+            font-size: 1.9375rem;
+        }
+    }
+
+     #block-palette-ecofriendlypaintsforahealthyhome {
+      //  padding: 40px 50px 20px 50px;
+       min-height: 497px;
+       max-height: 550px;
+     
+    }
+
+    #block-palette- ,
+    #block-palette-twocolors {
+        .content {
+            .field--name-field-image {
+                width: 49%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .field--type-text-with-summary {
+                width: 49%;
+                padding-bottom: 49%;
+                position: relative;
+
+                .field__item {
+                    position: absolute;
+                    top: 0;
+
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) { // X-Large devices (large desktops, 1200px and up)
+    .container {
+        width: 1180px;
+    }
+
+    #block-palette- ,
+    #block-palette-twocolors {
+        .content {
+
+            .field--type-text-with-summary {
+
+                .field__item {
+
+                    p {
+                        color: #425e44;
+                        margin: 50px 0;
+                        width: 380px;
+                        font-size: 42px;
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+      //  padding: 50px 50px 100px 50px;
+      max-height: 600px;
+      min-height: 550px;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) { // XX-Large devices (larger desktops, 1400px and up)
+    .container {
+        width: 1390px;
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {    
+        h1 {
+            font-size: 100px;
+        }
+    }
+    
+    #block-palette-ecofriendlypaintsforahealthyhome {
+      //  padding: 90px 50px 280px 50px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1600px) {
+    .container {
+        width: 1590px;
+    }
+    #block-palette-ecofriendlypaintsforahealthyhome {
+     //   padding: 112px 50px 400px 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1900px) {
+    .container {
+        width: 1890px;
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+     //   padding: 112px 50px 400px 50px;
+    }
+
+}
+*/
+
+// General styles
+body {
+    background-color: #fff;
+    font: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #1f1e1e;
+}
+
+#navbar {
+    background-color: #fff;
+}
+
+.menu--main li a,
+.nav-link,
+.cart-block--summary__count {
+    color: #fff;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 159px;
+    height: 47px;
+    border-radius: 4px;
+    border: 1px solid #1f1e1e;
+    background-color: #1f1e1e;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: 576px) {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+}
+
+#navbar-main{
+    background-color: #fff;
+
+    .container{
+        background: url('../images/header.png') no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+// Banner
+#block-palette-main-menu > ul {
+   
+}
+
+#block-palette-ecofriendlypaintsforahealthyhome {
+    width: 100%;
+    height: auto;
+    background: url('../images/image.png') no-repeat;
+    background-size: cover;
+    min-height: 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 63px;
+        line-height: 1.04;
+        color: #fff;
+        width: 410px;
+        margin: 40px;
+        text-align: left;
+    }
+
+    button {
+        width: 200px;
+        height: 37px;
+        border-radius: 4.17px;
+        border: 1px solid #1f1e1e;
+        background-color: #1f1e1e;
+        font: "Roboto", sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 1.02;
+        align-items: center;
+        margin: 0 0 0 40px;
+    }
+}
+
+// 4 info blocks
+#block-palette-views-block-short-info-block-1 {
+    margin: 40px auto;
+
+    .row {
+        .views-view-grid .views-col {
+            display: flex;
+
+            .views-field-info {
+                color: #3c3c3c;
+                font-size: 24px;
+                line-height: 1.15;
+            }
+
+            .views-field-body {
+                text-transform: uppercase;
+                margin: 0 30px 0 14px;
+                text-align: left;
+                color: #3c3c3c;
+                font-size: 11px;
+                line-height: 1.36;
+            }
+        }
+    }
+}
+
+h2, .h2 {
+    text-align: center;
+    font-size: 125px;
+    line-height: 1.05;
+    margin: 50px 0;
+
+    @media only screen and (max-width: 576px) {
+        font-size: 5.8rem;
+        margin: 3.125rem 0;
+    }
+}
+
+
+
+// Store views
+#views-bootstrap-shop-block-1,
+#block-palette-views-block-shop-block-2,
+.block-views-blockshop-block-2 {
+    .product-item {
+        .views-field-field-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 200px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        .views-field-title ,
+        .views-field-field-price {
+            
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+
+        .views-field-field-price {
+            margin-bottom: 20px;
+        }
+
+        a{
+            color: #3C3C3C;
+        }
+    }
+}
+
+#block-palette-ourmission {
+    margin-bottom: 60px;
+
+    p {
+        width: 681px;
+    }
+}
+
+#block-palette-ourmission,
+#block-palette-aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-weight: 400;
+        font-size: 192px;
+        line-height: 1.05;
+        margin-bottom: 50px;
+    }
+
+    h5 {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 38px;
+        line-height: 1.21;
+        text-align: center;
+    }
+}
+
+#block-palette-,
+#block-palette-twocolors,
+#block-palette-paintcalculator {
+    .content {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        .field--name-field-image,
+        .field--name-field-img {
+            width: 49%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .field--type-text-with-summary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-left: 10px;
+            background-color: #f4ede6;
+            width: 49%;
+            padding-bottom: 49%;
+            position: relative;
+
+            .field__item {
+                position: absolute;
+                top: 0;
+
+                p {
+                    color: #425e44;
+                    margin: 80px 0;
+                    width: 439px;
+                    font-size: 52px;
+                    line-height: 1.12;
+                    text-align: center;
+                }
+
+                h6 {
+                    font-weight: 400;
+                    color: #425e44;
+                    font-size: 9px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+#block-palette-twocolors {
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+        justify-content: center;
+
+        img {
+            width: 546px;
+            height: 546px;
+            margin-left: 10px;
+        }
+
+        .field--type-text-with-summary {
+            background: url('../images/back.png') no-repeat;
+            background-size: cover;
+            width: 49%;
+            padding-bottom: 49%;
+            position: relative;
+
+            .field__item {
+                position: absolute;
+                top: 0;
+
+                p {
+                    color: #1f1e1e;
+                    width: 330px;
+                    font-size: 46px;
+                    line-height: 1.09;
+                    text-align: center;
+                    margin: 100px 0;
+                }
+
+                .button {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+#paint-calculator-result{
+    color: #1f1e1e;
+    //width: 330px;
+    font-size: 46px;
+    line-height: 1.09;
+    text-align: center;
+    margin: 100px auto;
+}
+
+#block-palette-aboutus {
+    p {
+        font-size: 21px;
+        line-height: 1.38;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+article{
+    .layout--twocol-section--50-50{
+        margin: 30px 0 60px 0;
+
+
+        .layout__region--first{
+
+            .field--name-field-media-image{
+
+                .field__item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                    img{
+                        width: 60%;
+                        height: auto;
+                    }
+                }
+            }
+
+           
+        }
+
+        .layout__region--second{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+
+            .field--name-title,
+            .field--name-field-price{
+                font-size: 60px;
+            }
+
+        }
+
+
+    
+    }
+}
+
+
+
+#block-palette-calculatordescription{
+
+    .field--name-body{
+        font-size: 38px;
+        line-height: 1.21;
+        text-align: center;
+    }
+}
+
+
+#block-palette-aboutus-2{
+    p{
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+}
+
+
+footer{
+
+    background: #fff ;
+    border-top: 1px solid #1f1e1e;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 100%;
+    }
+
+    #block-palette-,
+    #block-palette-twocolors {
+        .content {
+
+            .field--type-text-with-summary {
+
+                .field__item {
+
+                    p {
+                        color: #425e44;
+                        margin: 50px 0;
+                        width: 380px;
+                        font-size: 42px;
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        max-height: 600px;
+        min-height: 550px;
+    }
+}
+/*
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 1390px;
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        max-height: 680px;
+        min-height: 550px;
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {
+        h1 {
+            font-size: 100px;
+        }
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        padding: 90px 50px 280px 50px;
+    }
+}
+*/
+@media only screen and (min-width: 1600px) {
+    .container {
+        width: 1590px;
+    }
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        max-height: 800px;
+        min-height: 750px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .container {
+        width: 1890px;
+    }
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        max-height: 800px;
+        min-height: 750px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;  
+
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {
+        h1 {
+            font-size: 120px;
+        }
+    }
+
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        h2 {
+            margin: 5.5rem 0 2rem 4rem;
+            font-size: 1.9375rem;
+        }
+
+        #first-btn{
+            margin: 0 0 0 4rem;
+        }
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        min-height: 582px;
+        max-height: 497px;
+    }
+
+    #block-palette-views-block-short-info-block-1 {
+        margin: 2.5rem 0 0 0rem ;
+    }
+
+    #views-bootstrap-shop-block-1,
+    #block-palette-views-block-shop-block-2,
+    .block-views-blockshop-block-2 {
+        .product-item {
+            .views-field-field-img {
+                img {
+                    width: 150px;
+                }
+            }
+            .views-field-title a,
+            .views-field-field-price {
+                text-align: center;
+                font-size: 1.275rem;
+                margin-bottom: 0px;
+            }
+
+            .views-field-field-price {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    #block-palette-,
+    #block-palette-twocolors,
+    #block-palette-paintcalculator {
+        .content {
+            .field--name-field-image {
+                width: 49%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .field--type-text-with-summary {
+                width: 49%;
+                padding-bottom: 49%;
+                position: relative;
+
+                .field__item {
+                    position: absolute;
+                    top: 0;
+
+                    p {
+                        color: #425e44;
+                        margin: 50px 0;
+                        width: 380px;
+                        font-size: 42px;
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    #block-palette- .content .field--type-text-with-summary .field__item p{
+        margin: 7.125rem 0;
+        font-size: 2.625rem;
+        width: 95%;
+    }
+
+
+
+    #block-palette-twocolors .content .field--type-text-with-summary .field__item p {
+        margin: 7.8rem 0;
+        font-size: 2rem;
+        width: 100%;
+
+        .button{
+            width: 50%;
+            font-size: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        max-height: 600px;
+        min-height: 500px;
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {
+        h1 {
+            text-align: center;
+            font-size: 4.8rem;
+        }
+    }
+
+    #block-palette-ourmission {
+        p {
+            width: 100%;
+            font-size: 2rem;
+            line-height: 1.3;
+        }
+    }
+
+    #block-palette-aboutus {
+        p {
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+    }
+
+    .button {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+    h2, .h2 {
+        text-align: center;
+        font-size: 5.8rem;
+        line-height: 1.05;
+        margin: 3.125rem 0;
+    }
+
+
+    #block-palette-views-block-short-info-block-1 {
+        margin: 2.5rem 0 0 2rem ;
+
+        .row {
+            .views-view-grid .views-col {
+                .views-field-info {
+                    font-size: 2.5rem;
+                }
+    
+                .views-field-body {
+                    font-size: 1rem;
+                    line-height: 1.36;
+                }
+            }
+        }
+    }
+
+
+    #views-bootstrap-shop-block-1,
+    #block-palette-views-block-shop-block-2,
+    .block-views-blockshop-block-2 {
+        .product-item {
+            .views-field-field-img {
+                img {
+                    max-width: 150px;
+                }
+            }
+            .views-field-title a,
+            .views-field-field-price {
+                text-align: center;
+                font-size: 1.3rem;
+                margin-bottom: 0px;
+            }
+
+            .views-field-field-price {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+    #block-palette-,
+    #block-palette-twocolors .content .field--name-field-image,
+    #block-palette-,
+    #block-palette-twocolors .content .field--type-text-with-summary {
+        width: 100%;
+    }
+
+    #block-palette- .content .field--type-text-with-summary .field__item p{
+        margin: 2.125rem 0;
+        font-size: 2.625rem;
+        width: 95%;
+    }
+
+
+
+    #block-palette-twocolors .content .field--type-text-with-summary .field__item p {
+        margin: 4.8rem 0;
+        font-size: 1.625rem;
+        width: 95%;
+
+        .button{
+            width: 70%;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        max-height: 497px;
+        min-height: 350px;
+
+        h2{
+            font-size: 2.375rem;
+        }
+
+        #first-btn{
+            width: 250px;
+            height: 47px;
+            font-size: 1.562rem;
+        }
+    }
+
+    #block-palette-views-block-short-info-block-1 {
+        margin: 2.5rem 0 0 3rem ;
+    
+        .row {
+            .views-view-grid .views-col {
+                .views-field-info {
+                    font-size: 2.7rem;
+                }
+    
+                .views-field-body {
+                    font-size: 0.8rem;
+                    line-height: 1.36;
+                }
+            }
+        }
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {
+        h1 {
+            font-size: 6rem;
+            text-align: center;
+        }
+    }
+
+    #block-palette-ourmission {
+        p {
+            width: 100%;
+            font-size: 2rem;
+            line-height: 1.3;
+        }
+    }
+
+    #block-palette-aboutus {
+        p {
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+    }
+
+    .button {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+    h2, .h2 {
+        text-align: center;
+        font-size: 5.8rem;
+        line-height: 1.05;
+        margin: 3.125rem 0;
+    }
+
+    #views-bootstrap-shop-block-1,
+    #block-palette-views-block-shop-block-2,
+    .block-views-blockshop-block-2 {
+        .product-item {
+            .views-field-field-img {
+                img {
+                    max-width: 250px;
+                }
+            }
+            .views-field-title,
+            .views-field-field-price {
+                text-align: center;
+                font-size: 1.575rem;
+                margin-bottom: 0px;
+            }
+
+            .views-field-field-price {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    #block-palette-,
+    #block-palette-twocolors .content {
+        flex-direction: row-reverse;
+    }
+
+    #block-palette-,
+    #block-palette-twocolors .content .field--name-field-image,
+    #block-palette-,
+    #block-palette-twocolors .content .field--type-text-with-summary {
+        width: 100%;
+    }
+
+    #block-palette- .content .field--type-text-with-summary .field__item p {
+        margin: 3.125rem 0  ;
+
+    }
+
+
+    #block-palette-twocolors .content .field--type-text-with-summary .field__item p {
+        margin: 1rem 0 3rem 0 ;
+
+        .button{
+            width: 70%;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    #block-palette-aboutus-2{
+        p{
+            font-size: 1rem;
+            text-align: center;
+            line-height: 1.7;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    #block-palette-ecofriendlypaintsforahealthyhome {
+        max-height: 497px;
+        min-height: 250px;
+
+        h2{
+            width: 70%;
+            font-size: 1.375rem;
+        }
+
+        #first-btn{
+            width: 250px;
+            height: 47px;
+            font-size: 1.562rem;
+        }
+    }
+
+    #block-palette-views-block-short-info-block-1 {
+        margin: 1.5rem 0 0 2rem ;
+    
+        .row {
+            .views-view-grid .views-col {
+                .views-field-info {
+                    font-size: 1.7rem;
+                }
+    
+                .views-field-body {
+                    font-size: 0.55rem;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+
+    #block-palette-ourmission, #block-palette-aboutus {
+        h1 {
+            font-size: 4.5rem;
+        }
+    }
+
+    #block-palette-ourmission {
+        p {
+            width: 98%;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+    }
+
+    #block-palette-aboutus {
+        p {
+            width: 98%;
+            font-size: 1rem;
+            line-height: 1.3;
+        }
+    }
+
+    .button {
+        width: 50%;
+        font-size: 1.2rem;
+    }
+
+    h2, .h2 {
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.05;
+        margin: 3.125rem 0;
+    }
+
+    #views-bootstrap-shop-block-1,
+    #block-palette-views-block-shop-block-2,
+    .block-views-blockshop-block-2 {
+        .product-item {
+            .views-field-field-img {
+                img {
+                    width: 100%;
+                }
+            }
+            .views-field-title a,
+            .views-field-field-price {
+                text-align: center;
+                font-size: 1.2rem;
+                margin-bottom: 0px;
+            }
+
+            .views-field-field-price {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #block-palette-,
+    #block-palette-twocolors .content {
+        flex-direction: row-reverse;
+    }
+
+    #block-palette-,
+    #block-palette-twocolors .content .field--name-field-image,
+    #block-palette-,
+    #block-palette-twocolors .content .field--type-text-with-summary {
+        width: 100%;
+    }
+
+    #block-palette- .content .field--type-text-with-summary .field__item p {
+        font-size: 1.2rem;
+        margin: 0.25rem 0  ;
+
+    }
+
+
+    #block-palette-twocolors .content .field--type-text-with-summary .field__item p {
+        margin: 1rem 0 1rem 0.4rem ;
+
+        .button{
+            width: 75%;
+            font-size: 0.8rem;
+            height: 40px;
+        }
+    }
+
+
+    article{
+        .layout--twocol-section--50-50{
+            margin: 30px 0 60px 0;
+    
+    
+            .layout__region--first{
+    
+                .field--name-field-media-image{
+    
+                    .field__item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                        img{
+                            width: 60%;
+                            height: auto;
+                        }
+                    }
+                }
+    
+               
+            }
+    
+            .layout__region--second{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: start;
+    
+                .field--name-title,
+                .field--name-field-price{
+                    font-size: 2.3rem;
+                    margin-left: 40px;
+                }
+    
+            }
+
+            .block-field-blockcommerce-productpaintvariations{
+                .button--add-to-cart{
+                    width: 100%;
+                    margin-left: 40px;
+                    font-size: 1.5rem;
+                }
+            }
+    
+    
+        
+        }
+
+        #views-bootstrap-shop-block-2{
+
+            .views-field-title{
+                font-size: 1.57rem;
+                height: 65px;
+                line-height: 1.2;
+
+            }
+
+            .views-field-field-price{
+                font-size: 1.2rem;
+                height: 30px;
+            }
+
+
+            .button--add-to-cart{
+                width: 80%;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+
+    #block-palette-paintcalculator {
+        .content {
+            .field--type-text-with-summary {
+                width: 100%;
+                width: 1.2rem;
+                line-height: 1.5;
+                margin: 2.125rem 0
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,6 @@
+name: Calculator for paint
+type: module
+description: 'Calculator for paint'
+core_version_requirement: ^10 || ^11
+package: Custom
+version: 1.0
